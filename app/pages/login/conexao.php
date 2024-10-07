@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "nome_do_banco";
+$dbname = "webmotors";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

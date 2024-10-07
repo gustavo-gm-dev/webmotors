@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['password'];
 
     // Verifica se o e-mail já está cadastrado
-    $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+    $sql = "SELECT * FROM usuario WHERE email = '$email'";
     $result = $conn->query($sql);
 
     if ($result->num_rows == 0) {
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
         // Insere o novo usuário no banco de dados
-        $sql = "INSERT INTO usuarios (email, senha) VALUES ('$email', '$senhaHash')";
+        $sql = "INSERT INTO usuario (email, senha) VALUES ('$email', '$senhaHash')";
         if ($conn->query($sql) === TRUE) {
             echo "Conta criada com sucesso!";
             header('Location: index.php');

@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST['password'];
 
     // Verifica o usuário no banco de dados
-    $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+    $sql = "SELECT * FROM usuario WHERE email = '$email'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

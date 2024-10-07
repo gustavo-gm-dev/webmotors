@@ -143,6 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Verifica se o upload foi bem-sucedido
                     if (move_uploaded_file($fileTmpName, $uploadFile)) {
                         $_SESSION['step'] = 4;
+
                     } else {
                         $_SESSION['step'] = 5;
                         session_destroy();
@@ -216,9 +217,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
         case 4:
             include '5_dados_veículo_confirm.html';
+            session_unset();
             break;
         case 5:
             include '6_dados_veículo_error.html';
+            session_destroy();
             break;
     }
 ?> 
