@@ -1,0 +1,38 @@
+@import url('navbar.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Layout flexível */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+/* Para o Chrome, Safari, Edge e outros navegadores baseados no WebKit */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* Para o Edge mais antigo */
+input[type="number"]::-ms-clear, 
+input[type="number"]::-ms-expand { 
+    display: none; 
+}

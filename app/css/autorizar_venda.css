@@ -1,0 +1,87 @@
+.authorization-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.veiculo-data {
+    width: 60%;
+}
+
+.veiculo-data h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.veiculo-data p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+}
+
+.deny-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.deny-btn:hover {
+    background-color: #e53935;
+}
+
+.content-inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.button-inicio{
+    color: rgb(255, 255, 255);
+    column-gap: 10px;
+    background: rgb(46, 45, 55);
+    width: 125px;
+    padding: 11px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}

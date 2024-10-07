@@ -1,0 +1,27 @@
+
+.navbar {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 16px 32px;
+    border-bottom: 1px solid rgb(237, 236, 242);
+}
+
+.navbar-right, .navbar-left {
+    display: flex;            /* Permite posicionar e alinhar os itens internos da div */
+    align-items: center;      /* Alinha os itens verticalmente ao centro */
+}
+
+.navbar-titulo {
+    margin-left: 10px;        /* Espaçamento entre a logo e o título */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-logo-solo{
+    height: 24px;
+}
+
+.image-logo-solo{
+    height: 24px;
+    width: 129px;
+}

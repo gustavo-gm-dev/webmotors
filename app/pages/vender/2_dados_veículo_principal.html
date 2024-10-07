@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cadastrar_anuncio.css">
+</head>
+<body>
+    <div class="dados-veiculo">
+        <div class="contect-title-dados-veiculo">
+            <div class="justify-center items-center w-full flex mb">
+                <h2 class="content-text-dados-veiculo">Complemente as informações do seu veículo</h2>
+            </div>
+            <form method="POST">
+                <div class="content-data-dados-veiculo justify-center flex flex-direction items-center">
+                    <div class="content-anuncio">
+                        <label class="label-dados-veiculos" for="quilometragem">Quilometragem*
+                            <input class="input-quilometragem" placeholder="Informe a quilometragem" type="number" name="quilometragem" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <label class="label-dados-veiculos" for="preco">Preço*
+                            <input class="input-quilometragem" placeholder="Informe o preço de venda do veículo" type="number" name="preco" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <span>Informe os opcionais do seu veículo</span>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="airbag" name="opcionais[]"> Airbag
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="alarme" name="opcionais[]"> Alarme
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="ar condicionado" name="opcionais[]"> Ar condicionado
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="direcao hidraulica" name="opcionais[]"> Direção hidráulica
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="freio abs" name="opcionais[]"> Freio ABS
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="travas eletricas" name="opcionais[]"> Travas elétricas
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="ar quente" name="opcionais[]"> Ar quente
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="bancos em couro" name="opcionais[]"> Bancos em couro
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="teto solar" name="opcionais[]"> Telo Solar
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <span>Informe as condições do veículo</span>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="unico dono" name="condicoes[]"> Único Dono
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="IPVA pago" name="condicoes[]"> IPVA Pago
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="nao aceito troca" name="condicoes[]"> Não aceito troca
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="licenciado" name="condicoes[]"> Licenciado
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="garantia de fabrica" name="condicoes[]"> Garantia de Fábrica
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="veiculo de colecionador" name="condicoes[]"> Veículo de Colecionador
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="todas as revisoes em concessionaria" name="condicoes[]"> Todas as revisões em concessionaria
+                        </label>
+                        <label class="option">
+                            <input class="checkbox-veiculo" type="checkbox" value="adaptada para pessoa com deficiencia" name="condicoes[]"> Adpatada para pessoas com deficiência
+                        </label>
+                    </div>
+                </div>
+                <div class="content-button-dados-veiculo">
+                    <button class="button-dados-veiculo-back flex">
+                        <img src="../../../public/image/arrow_back.svg" alt="arrow">
+                        Voltar
+                    </button>
+                    <button class="button-dados-veiculo-confirm flex" type="submit" name="submit_step_2">
+                        Continuar
+                        <img src="../../../public/image/arrow_forward.svg" alt="arrow">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</html>

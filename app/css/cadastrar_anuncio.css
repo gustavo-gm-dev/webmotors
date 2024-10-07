@@ -1,0 +1,285 @@
+.step{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 32px;
+}
+
+.step-one, .step-two, .step-three{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.step-content{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 23px;
+}
+
+.icon-step{
+    width: 20px;
+    height: 20px;
+}
+
+.step-text{
+    color: rgb(46, 45, 55);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.step-progress{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(208, 207, 218);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-left: 5px;
+    transition: width 0.5s ease-out;
+}
+
+.step-progress-completed{
+    background-color: #fff;
+    transition: width 0.5s ease-out;
+    width: 0%;
+}
+
+
+/*Dados do veiculo*/
+.dados-veiculo{
+    flex: 1 1 0%;
+}
+
+.contect-title-dados-veiculo{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(208, 207, 218);
+    margin: 36px 32px;
+    border-radius: 10px;
+    padding: 40px 48px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.mb{
+    margin-bottom: 32px;
+}
+
+.content-text-dados-veiculo{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content-data-dados-veiculo{
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.content-input-placa{
+    width: 25%;
+    border-bottom: solid rgb(208, 207, 218);
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.input-placa{
+    background: rgb(255, 255, 255);
+    color: rgb(46, 45, 55);
+    outline: none;
+    padding: 11px 45px 11px 16px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content-button-dados-veiculo{
+    display: flex;
+    padding-top: 25px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.button-dados-veiculo-confirm{
+    color: rgb(255, 255, 255);
+    column-gap: 10px;
+    background: rgb(46, 45, 55);
+    width: 125px;
+    padding: 11px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+/*DESTAQUE SEU ANUNCIO*/
+.content-anuncio{
+    width: 25%;
+    display: inline-block;
+    border-bottom: 1px solid rgb(208, 207, 218);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.label-dados-veiculos{
+    display: block;
+    font-size: 12px;
+}
+
+.input-quilometragem{
+    display: block;
+    width: 100%; /* Faz o input ocupar a largura completa */
+}
+
+.input-quilometragem{
+    color: rgb(46, 45, 55);
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+/*Informe os opcionais do seu veículo*/
+.option{
+    display: block;
+    margin: 5px 0;
+}
+
+.button-dados-veiculo-back{
+    color: rgb(46, 45, 55);
+    column-gap: 10px;
+    background: rgb(255, 255, 255);
+    width: 125px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.dados-perfil{
+    flex: 1 1 0%;
+}
+
+.contect-title-perfil{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(208, 207, 218);
+    margin: 36px 32px;
+    border-radius: 10px;
+    padding: 40px 48px;
+}
+
+.content-text-perfil{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content-data-perfil{
+    gap: 2rem;
+}
+
+.label-perfil{
+    display: block;
+    font-size: 12px;
+}
+
+.content-data-perfil .content-anuncio{
+    display: block;
+}
+
+/*Dados de imagem*/
+.dados-image{
+    flex: 1 1 0%;
+}
+
+.contect-title-image{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(208, 207, 218);
+    margin: 36px 32px;
+    border-radius: 10px;
+    padding: 40px 48px;
+}
+
+.content-text-image{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content-file-input{
+    gap: 1rem;
+}
+
+.confirm, .error{
+    flex: 1 1 0%;
+}
+
+.contect-title-final{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(208, 207, 218);
+    margin: 36px 32px;
+    border-radius: 10px;
+    padding: 40px 48px;
+}
+
+.content-final{
+    display: flex;
+    flex-direction: column; /* Muda a direção para coluna */
+    align-items: center; /* Centraliza os itens na horizontal */
+}
+
+.icon-final{
+    height: 50px;
+}
+
+.content-text-final{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.button-inicio{
+    color: rgb(255, 255, 255);
+    column-gap: 10px;
+    background: rgb(46, 45, 55);
+    width: 125px;
+    padding: 11px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}

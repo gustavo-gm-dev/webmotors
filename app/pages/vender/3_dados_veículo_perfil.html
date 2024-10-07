@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/cadastrar_anuncio.css">
+</head>
+<body>
+    <div class="dados-perfil">
+        <div class="contect-title-perfil">
+            <div class="justify-center items-center w-full flex mb">
+                <h2 class="content-text-perfil">Verifique os seus dados abaixo</h2>
+            </div>
+            <form method="POST">
+                <div class="content-data-perfil justify-center flex flex-direction items-center">
+                    <div class="content-anuncio">
+                        <label class="label-perfil" for="email">E-mail*
+                            <input class="input-quilometragem" placeholder="joao@hotmail.com" type="email" name="email" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <label class="label-perfil" for="nome">Nome Completo*
+                            <input class="input-quilometragem" placeholder="João da Silva" type="text" name="nome" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <label class="label-perfil" for="nascimento">Data de Nascimento*
+                            <input class="input-quilometragem" placeholder="Data de nascimento" type="date" name="nascimento" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <label class="label-perfil" for="cpf">CPF*
+                            <input class="input-quilometragem" placeholder="CPF" type="number" name="cpf" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <label class="label-perfil" for="telefone">Telefone*
+                            <input class="input-quilometragem" placeholder="Telefone" type="tel" name="telefone" id="" required>
+                        </label>
+                    </div>
+                    <div class="content-anuncio">
+                        <label class="label-perfil" for="cep">CEP da localização do anúncio*
+                            <input class="input-quilometragem" placeholder="00000-00" type="text" name="cep" id="" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="content-button-dados-veiculo">
+                    <button class="button-dados-veiculo-back flex">
+                        <img src="../../../public/image/arrow_back.svg" alt="arrow">
+                        Voltar
+                    </button>
+                    <button class="button-dados-veiculo-confirm flex" type="submit" name="submit_step_3">
+                        Continuar
+                        <img src="../../../public/image/arrow_forward.svg" alt="arrow">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
